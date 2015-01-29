@@ -59,15 +59,6 @@ public class ChildCareState extends AbstractState {
 		}
 	}
 
-//	public void childrenEntered(int n) {
-//		synchronized (this) {
-//			log(null, (n == 1 ? "Child entered!" : (n + " children entered!")));
-//			if (childrenWaitingToEnter > 0)
-//				childrenWaitingToEnter -= n;
-//			children += n;
-//		}
-//	}
-
 	public void childLeft() {
 		synchronized (this) {
 			log(null, "Child left!");
